@@ -23,3 +23,18 @@ class Player
   end
 
 end
+
+puts "Please create a new player: "
+name = gets.chomp
+
+puts "Please enter their position: "
+position = gets.chomp
+
+puts "Please enter their height: "
+height = gets.chomp
+
+puts "Please enter their weight: "
+weight = gets.chomp
+
+
+puts "new player created #{new_name}"
