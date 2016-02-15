@@ -36,5 +36,23 @@ height = gets.chomp
 puts "Please enter their weight: "
 weight = gets.chomp
 
+name = Player.new("#{name}", "#{position}", "#{height}", "#{weight}")
 
-puts "new player created #{new_name}"
+puts "New player created."
+
+puts "What information do you need?"
+request = gets.chomp
+
+until request == "exit" do
+
+  if name.respond_to?(request)
+    puts name.send(request)
+  else
+    puts "That is not a valid request."
+  end
+puts "What information do you need?"
+request = gets.chomp
+end
+puts "Thankyou for using PlayerSearch."
+
+
