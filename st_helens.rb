@@ -14,5 +14,19 @@ class Player
     @position
   end
 
+  def height
+    @height
+  end
+
+  def weight
+    @weight
+  end
+
+end
+
 player_1 = Player.new("Jonny Lomax", "Full back", "176 cm", "88 kg")
-player_2 = Player
+player_2 = Player.new("Atelea Vea", "Second row", "183 cm", "103 kg")
+
+
+puts "Two players created:"
+puts "PLayer 1: #{player_1.name} plays at #{player_1.position}, and is #{player_1.height} tall and weighs #{player_1.weight}."
